@@ -10,30 +10,29 @@ Construa um projeto na Unity (temática e conteúdo livre) que utilize o compone
 
 ## Funcionalidades
 
-- **Música de fundo:** o objeto `Musica` tem um `AudioSource` com *Loop* e *Play On Awake* ativados, tocando `Winds of Valor`.
+- **Música de fundo:** o objeto `Musica` tem um `AudioSource` com _Loop_ e _Play On Awake_ ativados, tocando `Winds of Valor`.
 - **Efeitos sonoros:** o personagem (`HeroKnight`) tem um `AudioSource` próprio e toca cada som com `PlayOneShot` no momento da mecânica.
 
 ## Controles
 
-| Tecla           | Ação     | Som                                  |
-| --------------- | -------- | ------------------------------------ |
-| `A` / `D`       | Andar    | `footstep.wav` (passos, a cada 0,3s) |
-| `Espaço`        | Pular    | `footstep.wav` (mais agudo)          |
-| Clique esquerdo | Atacar   | `sword.wav`                          |
-| `Q`             | Tomar dano | `pain.wav`                         |
-| `E`             | Morrer   | `DeathExplosion.wav`                 |
-| `R`             | Reviver (depois de morrer) | —                  |
-| `Shift`         | Rolar    | —                                    |
-| Clique direito  | Defender | —                                    |
+| Tecla           | Ação                       | Som                                  |
+| --------------- | -------------------------- | ------------------------------------ |
+| `A` / `D`       | Andar                      | `footstep.wav` (passos, a cada 0,3s) |
+| `Espaço`        | Pular                      | `footstep.wav` (mais agudo)          |
+| Clique esquerdo | Atacar                     | `sword.wav`                          |
+| `Q`             | Tomar dano                 | `pain.wav`                           |
+| `E`             | Morrer                     | `DeathExplosion.wav`                 |
+| `R`             | Reviver (depois de morrer) | —                                    |
+| `Shift`         | Rolar                      | —                                    |
+| Clique direito  | Defender                   | —                                    |
 
 Depois de morrer, o personagem não se mexe até ser revivido com `R`.
 
 ## Cenas
 
-| Cena            | Descrição                                            |
-| --------------- | ---------------------------------------------------- |
-| `CenaPrincipal` | Cena do jogo (índice 0 no Build Settings)            |
-| `SampleScene`   | Cena padrão do template, sem uso                     |
+| Cena            | Descrição                                 |
+| --------------- | ----------------------------------------- |
+| `CenaPrincipal` | Cena do jogo (índice 0 no Build Settings) |
 
 ## Como executar
 
@@ -47,8 +46,7 @@ Depois de morrer, o personagem não se mexe até ser revivido com `R`.
 ```
 Assets/
 ├── Scenes/
-│   ├── CenaPrincipal.unity
-│   └── SampleScene.unity
+│   └── CenaPrincipal.unity
 ├── Scripts/
 │   ├── HeroKnight.cs
 │   ├── Sensor_HeroKnight.cs
